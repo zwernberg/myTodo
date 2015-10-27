@@ -9,7 +9,6 @@ router.register(r'todos', views.todoViewSet)
 
 urlpatterns = patterns('',
 	url(r'^$', TemplateView.as_view(template_name='base.html'), name='base'),
-	##url(r'^$', RedirectView.as_view(url="/templaet/base.html")),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 )
