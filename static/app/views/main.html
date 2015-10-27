@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>My todos</h2>
+
+
+  <form class="form-inline" role="form" ng-model="todo" ng-submit="addTodo(todo)">
+
+       <div class="form-group" >
+       <select class='form-control' data-ng-model='todo.priority' data-ng-options='item as item.name for item in collections'></select>
+      </div>  
+  <div class="form-group">
+    <input type="text" ng-model="todo.title" placeholder="What needs to be done?" class="form-control">
+  </div>
+    <input type="submit" class="btn btn-primary" value="Add">
+</form>
+
+  <!-- Todos list -->
+  <div ui-sortable ng-model="todos">
+    <p class="input-group" ng-submit="updateTodo(todo)" ng-repeat="todo in todos | orderBy:'priority'"" style="padding:5px 10px; cursor: move;">
+      
+      <input type="text"  ng-model="todo.title" class="form-control">
+      <span class="input-group-btn">
+      <button type="button" class="btn btn-default" aria-label="Left Align" ng-click="updateTodo(todo)">
+        <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true" </span>
+      </button>
+        <button class="btn btn-danger" ng-click="removeTodo(todo,$index)" aria-label="Remove">X</button>
+      </span>
+    </p>
+  </div>
+
+</div>
