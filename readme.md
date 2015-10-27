@@ -6,6 +6,9 @@ A sample application using Django-Rest-Framework and angular for a persistent To
 ## Requirements
 
 ```
+npm
+bower
+
 Django==1.8.5
 django-cors-headers==1.1.0
 djangorestframework==3.2.4
@@ -31,6 +34,8 @@ To install the python requirements run the following from the command line.
 `$ pip install -r requirements.txt`
 
 ### 4. Bower Setup
+Bower is used to pull in the frontend dependencies. to install bower use
+$ npm install -g bower
 
 $ bower install
 
