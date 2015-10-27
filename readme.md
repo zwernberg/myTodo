@@ -35,10 +35,11 @@ To install the python requirements run the following from the command line.
 
 ### 4. Bower Setup
 Bower is used to pull in the frontend dependencies. to install bower use
-`$ npm install -g bower
+```
+$ npm install -g bower
 
-`$ bower install
-
+$ bower install
+```
 ### 5. Run the Development Server
 
 ```
