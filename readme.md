@@ -36,5 +36,7 @@ $ bower install
 
 ### 5. Run the Development Server
 
-`$ python manage.py migrate
-`$ python manage.py runserver
+```
+$ python manage.py migrate
+$ python manage.py runserver
+```
