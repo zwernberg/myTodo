@@ -9,7 +9,7 @@
  */
 angular.module('myTodoApp')
 .factory('todoService', function ($resource) {
-      var data = $resource('http://localhost:8000/todos/:todo',{todo: "@todo"}, {
+      var data = $resource('http://localhost:8000/api/todos/:todo',{todo: "@todo"}, {
       update:{
           method:'PUT'
           }
